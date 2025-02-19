@@ -4,71 +4,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Barra Superior</title>
+    <title>Fitness Club - Seu caminho para uma vida mais saudável</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
     <header>
         <nav>
+            <div class="mobile-menu">
+                <i class="fas fa-bars" id="menu-toggle"></i>
+            </div>
             <ul class="nav-menu">
-                <li><a href="https://github.com/Danielcp99" target="_blank">Home</a></li>
-                <li><a href="https://github.com/Danielcp99" target="_blank">Unidades</a></li>
-                <li class="logo"><img src="8641099.png" alt="Logo"></li>
-                <li><a href="https://github.com/Danielcp99" target="_blank">Planos</a></li>
-                <li><a href="https://github.com/Danielcp99" target="_blank">SIGN IN</a></li>
+                <li><a href="#" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#" class="nav-link"><i class="fas fa-dumbbell"></i> Unidades</a></li>
+                <li class="logo"><img src="8641099.png" alt="Fitness Club Logo"></li>
+                <li><a href="#plans" class="nav-link"><i class="fas fa-clipboard-list"></i> Planos</a></li>
+                <li><a href="#" class="nav-link sign-in"><i class="fas fa-user"></i> SIGN IN</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section class="hero">
+            <div class="hero-content">
+                <h1>Transforme sua vida com o Fitness Club</h1>
+                <p>Comece sua jornada fitness hoje mesmo!</p>
+            </div>
             <div class="image-container">
-                <img src="7606734.jpg" alt="Left Image" class="hero-image">
-                <img src="6557442.jpg" alt="Right Image" class="hero-image">
+                <div class="hero-image-wrapper">
+                    <img src="7606734.jpg" alt="Treino de força" class="hero-image">
+                    <div class="image-overlay">
+                        <h3>Treino de Força</h3>
+                        <p>Equipamentos modernos e instrutores qualificados</p>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <img src="6557442.jpg" alt="Área cardio" class="hero-image">
+                    <div class="image-overlay">
+                        <h3>Área Cardio</h3>
+                        <p>Equipamentos de última geração para seu treino</p>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="plans">
-            <h1 class="plans-title">Planos</h1>
+        <section id="plans" class="plans">
+            <h1 class="plans-title">Escolha seu Plano</h1>
             <div class="plans-container">
-                <div class="plan-box">
-                    <h2>Plano Light</h2>
-                    <div class="plan-features">
-                        <p>✅ Anuidade zero</p>
-                        <p>✅ Adesão zero</p>
-                        <p>✅ Ergometria e musculação</p>
-                        <p><s>1 ano de gratuidade app Fitness Club</s></p>
-                        <p><s>Treino liberado em todas as unidades</s></p>
-                        <p><s>Acompanhante gratuito 10x ao mês</s></p>
-                        <p><s>1 mês grátis para um amigo</s></p>
+                <div class="plan-box" data-aos="fade-up">
+                    <div class="plan-header">
+                        <h2>Plano Light</h2>
+                        <p class="plan-price">R$ 79,90<span>/mês</span></p>
                     </div>
-                    <p class="plan-price">R$ 79,90</p>
-                    <a href="https://github.com/Danielcp99" target="_blank" class="matricule-se">Matricule-se</a>
+                    <div class="plan-features">
+                        <p><i class="fas fa-check-circle"></i> Anuidade zero</p>
+                        <p><i class="fas fa-check-circle"></i> Adesão zero</p>
+                        <p><i class="fas fa-check-circle"></i> Ergometria e musculação</p>
+                        <p class="disabled"><i class="fas fa-times-circle"></i> 1 ano de gratuidade app Fitness Club</p>
+                        <p class="disabled"><i class="fas fa-times-circle"></i> Treino liberado em todas as unidades</p>
+                        <p class="disabled"><i class="fas fa-times-circle"></i> Acompanhante gratuito 10x ao mês</p>
+                        <p class="disabled"><i class="fas fa-times-circle"></i> 1 mês grátis para um amigo</p>
+                    </div>
+                    <button class="matricule-se">
+                        <span>Matricule-se</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
                 </div>
 
-                <div class="plan-box">
-                    <h2>Plano Plus</h2>
-                    <div class="plan-features">
-                        <p>✅ Anuidade zero</p>
-                        <p>✅ Adesão zero</p>
-                        <p>✅ Ergometria e musculação</p>
-                        <p>✅ 1 ano de gratuidade app Fitness Club</p>
-                        <p>✅ Treino liberado em todas as unidades</p>
-                        <p>✅ Acompanhante gratuito 10x ao mês</p>
-                        <p>✅ 1 mês grátis para um amigo</p>
+                <div class="plan-box featured" data-aos="fade-up" data-aos-delay="200">
+                    <div class="plan-badge">Mais Popular</div>
+                    <div class="plan-header">
+                        <h2>Plano Plus</h2>
+                        <p class="plan-price">R$ 99,90<span>/mês</span></p>
                     </div>
-                    <p class="plan-price">R$ 99,90</p>
-                    <a href="https://github.com/Danielcp99" target="_blank" class="matricule-se">Matricule-se</a>
+                    <div class="plan-features">
+                        <p><i class="fas fa-check-circle"></i> Anuidade zero</p>
+                        <p><i class="fas fa-check-circle"></i> Adesão zero</p>
+                        <p><i class="fas fa-check-circle"></i> Ergometria e musculação</p>
+                        <p><i class="fas fa-check-circle"></i> 1 ano de gratuidade app Fitness Club</p>
+                        <p><i class="fas fa-check-circle"></i> Treino liberado em todas as unidades</p>
+                        <p><i class="fas fa-check-circle"></i> Acompanhante gratuito 10x ao mês</p>
+                        <p><i class="fas fa-check-circle"></i> 1 mês grátis para um amigo</p>
+                    </div>
+                    <button class="matricule-se">
+                        <span>Matricule-se</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
                 </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>@2025 Carlos Daniel | All Rights Reserved</p>
-        <p>Images by <a href="https://www.freepik.com/" target="_blank">Freepik</a></p>
+        <div class="footer-content">
+            <div class="footer-social">
+                <a href="https://github.com/Danielcp99" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://github.com/Danielcp99" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/Danielcp99" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="footer-info">
+                <p>@2025 Fitness Club | All Rights Reserved</p>
+                <p>Images by <a href="https://www.freepik.com/" target="_blank">Freepik</a></p>
+            </div>
+        </div>
     </footer>
+
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            document.querySelector('.nav-menu').classList.toggle('active');
+        });
+    </script>
 </body>
 
 </html>
