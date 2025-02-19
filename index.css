@@ -39,17 +39,19 @@ header {
 
 .nav-menu a {
     color: var(--primary-color);
+    font-weight: bold;
     text-decoration: none;
-    padding: 0.7rem 1.2rem;
-    border-radius: 30px;
+    padding: 0.8rem 1.5rem;
+    border-radius: 10px;
     transition: all 0.3s ease;
-    font-size: 16px;
+    font-size: 1.1rem;
 }
 
 .nav-menu a:hover {
     background-color: var(--primary-color);
     color: var(--background-color);
     transform: scale(1.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 main {
